@@ -1,0 +1,412 @@
+/* Rem ============================================================ */
+/* Em ============================================================= */
+/* ===================================================================
+  Variables: Font families ======================================== */
+/* =======================================================================
+  Normalization - Flo2ent
+  ------------------------------------------------------------------------
+  Normalizations, resets & fixes.
+  ===================================================================== */
+*,
+:before,
+:after {
+  text-overflow: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  -ms-overflow-style: scrollbar;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", "Liberation Sans", Ubuntu, Cantarell, Oxygen, "Fira Sans", Helvetica, Arial, Fallback sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 160%;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  text-size-adjust: 100%;
+  min-height: 100%;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+canvas,
+embed,
+iframe,
+main,
+object {
+  display: block;
+}
+
+ul,
+p,
+h1,
+h2,
+ol,
+h3,
+h4,
+h5,
+h6,
+figure,
+blockquote,
+pre,
+textarea,
+dl {
+  margin-top: 0;
+}
+
+a,
+button,
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+}
+
+p,
+ul,
+ol,
+figure,
+hr,
+table,
+blockquote,
+form,
+pre,
+fieldset,
+dl {
+  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+/*
+picture {
+  // Display inline by default and interfere with aspect-ratio ===========
+  display: contents;
+}
+*/
+img,
+video,
+iframe,
+embed,
+object,
+canvas {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+/*
+sgv {
+
+}
+*/
+/*
+picture {
+  display: block;
+  max-width: 100%;
+}
+*/
+/*
+ul,
+ol,
+p,
+figcaption,
+table,
+blockquote,
+dl {
+  // #opinionated
+  max-width: $textMaxInlinesize);
+}
+*/
+ul,
+ol {
+  padding-left: 2.25em;
+  list-style-position: inside;
+}
+
+/*
+form {
+  // Correct margin displayed oddly in IE 6/7
+  margin: 0;
+}
+*/
+label {
+  display: inline-block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-size: 1em;
+}
+
+/*
+input,
+textarea,
+select {
+  // Prevents the button to grow on the 
+  // cross axis if inside a flex container ===============================
+  // align-self(flex-start);
+
+  // Restrict the backgroud box to the padding box =======================
+  // background-clip(padding-box);
+}
+*/
+button,
+textarea,
+select {
+  font-family: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+/*
+button,
+select {
+  min-block-size($em1);
+}
+*/
+textarea,
+select {
+  text-align: inherit;
+}
+
+/*
+input {
+  // max-width: 100%);
+}
+*/
+button {
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* display: inline-flex; */
+  min-width: 12ch;
+  min-width: min(100%, 12ch);
+  border: 1px solid transparent;
+  /* padding: 1px 0.6666666667em; */
+  align-self: flex-start;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-clip: padding-box;
+  /* border-radius: 5px; */
+  /* border-radius: calc((0.75em + 2px) * 0.375); */
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-appearance: button;
+  vertical-align: middle;
+  overflow: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+figure,
+blockquote,
+fieldset {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+/*
+iframe,
+embed,
+object,
+canvas {
+  // #opinionated
+  contain: strict;
+}
+*/
+video {
+  vertical-align: baseline;
+}
+
+/*
+source {
+  // Display inline by default while having nothing to display ===========
+  display: none;
+}
+*/
+h3 {
+  font-size: 1.872rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.328rem;
+}
+
+h6 {
+  font-size: 1.072rem;
+}
+
+hr {
+  height: auto;
+  border-width: 1px 0 0;
+  border-style: solid;
+  overflow: visible;
+  clear: both;
+  color: inherit;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "B612Mono-Regular", ui-monospace, SFMono-Regular, Menlo, "Roboto Mono", "Noto Mono", Monaco, Consolas, "Liberation Mono", "Ubuntu Monospace", "Oxygen Mono", "Courier New", Courier, monospace;
+}
+
+pre,
+textarea {
+  min-height: 9.4444444444em;
+  max-height: 70vh;
+  padding-left: 0.6666666667em;
+}
+
+/*
+code {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+*/
+/*
+pre code {
+  font-size: inherit;
+  word-break: normal;
+}
+*/
+pre {
+  padding-right: 0.6666666667em;
+  overflow-x: auto;
+  scrollbar-gutter: stable;
+}
+
+table {
+  width: 100%;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow-x: auto;
+  scrollbar-gutter: stable;
+}
+
+thead,
+tr,
+th,
+tbody,
+td,
+tfoot {
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+thead,
+caption {
+  text-align: left;
+}
+
+thead {
+  *border-color: inherit;
+}
+
+td {
+  text-align: center;
+}
+
+fieldset {
+  padding: 0;
+}
+
+textarea {
+  border: 1px solid;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  padding-top: 1px;
+  padding-right: 0;
+  padding-bottom: 1px;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  border-radius: 5px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: text;
+}
+
+select {
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  overflow: visible;
+  padding: 0 0.6666666667em;
+  vertical-align: top;
+  margin: 2px;
+}
+
+audio {
+  max-width: 100%;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}/*# sourceMappingURL=normalization.css.map */

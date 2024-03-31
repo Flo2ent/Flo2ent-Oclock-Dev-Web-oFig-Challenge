@@ -1,0 +1,147 @@
+/* Rem ============================================================ */
+/* Em ============================================================= */
+/* ===================================================================
+  Variables: Font families ======================================== */
+body {
+  font-family: "Raleway", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans", "Droid Sans", "Segoe UI", "Helvetica Neue", "Liberation Sans", Ubuntu, Cantarell, Oxygen, "Fira Sans", Helvetica, Arial, Fallback sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.u-visually-hidden {
+  white-space: nowrap;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+.site-header,
+.header,
+.product-card__buy-btn,
+.site-footer {
+  color: #fff;
+}
+
+.site-header,
+.site-footer {
+  padding: 0.6666666667em 1.5em;
+}
+
+.site-header,
+.product-card__buy-btn {
+  background-color: #c80000;
+}
+
+.header,
+.site-footer {
+  text-align: center;
+}
+
+.logo,
+.product-card__character,
+.product-card__offer-discount,
+.product-card__price {
+  font-weight: 700;
+}
+
+.product-card__character,
+.product-card__offer-discount {
+  font-size: 1.5em;
+}
+
+.site-home-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 2.25em;
+}
+
+.header {
+  padding: 0.4444444444em 1.5em;
+  background-color: #666;
+}
+
+.heading {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.product-cards-list {
+  display: flex;
+  max-width: calc(1506px + 4.5rem + 3em + 2.6666666667em);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  gap: 1.5rem 2.25rem;
+  list-style: none outside;
+  list-style: outside url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
+}
+
+.product-card {
+  position: relative;
+  display: inline-flex;
+  height: 100%;
+  padding: 0.4444444444em;
+  border: 1px solid #ccc;
+  flex-direction: column;
+}
+.product-card__img-ctn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card__game {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+}
+.product-card__offer-discount {
+  position: absolute;
+  top: 0.4444444444em;
+  right: 0.4444444444em;
+  box-sizing: content-box;
+  display: inline-flex;
+  padding: 0.4444444444em;
+  justify-content: center;
+  align-items: center;
+  border: 0.1975308642em solid #ccc;
+  aspect-ratio: 1/1;
+  background-color: #666;
+  border-radius: 50%;
+  color: #fff;
+}
+.product-card__buy-btn {
+  display: inline-flex;
+  width: 100%;
+  margin-top: auto;
+  padding: 0.6666666667em 1em;
+  justify-content: space-between;
+}
+.product-card__price {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.product-card__oldPrice {
+  text-decoration: line-through;
+}
+
+.site-footer {
+  background-color: #666;
+}
+
+@supports (grid-template-columns: repeat(auto-fill, minmax(10px, 1fr))) {
+  .product-cards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    justify-content: normal;
+  }
+}/*# sourceMappingURL=styles.css.map */
